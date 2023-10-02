@@ -15,6 +15,7 @@ namespace ChatBot
         {
             public string User { get; set; }
             public string Assistant { get; set; }
+            public bool IsUserMessage { get; set; }
         }
 
         [XmlElement("Conversation")]
