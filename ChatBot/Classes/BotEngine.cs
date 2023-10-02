@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChatBot
+namespace ChatBot.Classes
 {
     public class BotEngine
     {
@@ -17,7 +17,7 @@ namespace ChatBot
         {
             Messages messagesData = new Messages();
             messagesData.Load();
-            this.messages = messagesData.List;
+            messages = messagesData.List;
         }
 
         /// <summary>
@@ -35,7 +35,7 @@ namespace ChatBot
             int distance = ComputeLevenshteinDistance(input, bestMatch);
 
             //Can be changed
-            if (distance <= 3) 
+            if (distance <= 3)
             {
                 answer = messages.First(m => m.Keyword == bestMatch).Answer;
             }
@@ -54,7 +54,7 @@ namespace ChatBot
         /// <param name="b"></param>
         /// <returns></returns>
         private int ComputeLevenshteinDistance(string a, string b)
-        {   
+        {
             int[,] matrix = new int[a.Length + 1, b.Length + 1];
 
             for (int i = 0; i <= a.Length; i++)
@@ -71,7 +71,7 @@ namespace ChatBot
             {
                 for (int j = 1; j <= b.Length; j++)
                 {
-                    int cost = (a[i - 1] == b[j - 1]) ? 0 : 1;
+                    int cost = a[i - 1] == b[j - 1] ? 0 : 1;
 
                     matrix[i, j] = Math.Min(
                         Math.Min(matrix[i - 1, j] + 1, matrix[i, j - 1] + 1),

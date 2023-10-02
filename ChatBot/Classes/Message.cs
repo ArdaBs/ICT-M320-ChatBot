@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace ChatBot
+namespace ChatBot.Classes
 {
     public class Message
     {

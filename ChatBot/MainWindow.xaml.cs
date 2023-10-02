@@ -1,7 +1,6 @@
 ﻿using System;
 using NAudio.Wave;
 using System.Media;
-using ChatBot;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using ChatBot.Classes;
 
 namespace ChatBot
 {
@@ -136,7 +136,7 @@ namespace ChatBot
         {
             if (storage.List.Count == 0)
             {
-                storage.List.Add(new Storage.Conversation { User = "Hey ChatBox", Assistant = "Hey Meister, wie kann ich Ihnen helfen?", IsUserMessage = false });
+                storage.List.Add(new Storage.Conversation { User = "Hey ChatBot", Assistant = "Hey Meister, wie kann ich Ihnen helfen?", IsUserMessage = false });
                 ConversationDisplay.ItemsSource = storage.List;
             }
         }

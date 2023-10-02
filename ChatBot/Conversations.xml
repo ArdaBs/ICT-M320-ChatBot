@@ -1,18 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Storage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Conversation>
-    <User>Hey ChatBox</User>
-    <Assistant>Hey Meister, wie kann ich Ihnen helfen?</Assistant>
-    <IsUserMessage>false</IsUserMessage>
-  </Conversation>
-  <Conversation>
-    <User>Hallo</User>
-    <Assistant>Hallo, wie geht es dir?</Assistant>
-    <IsUserMessage>false</IsUserMessage>
-  </Conversation>
-  <Conversation>
-    <User>Perfekt</User>
-    <Assistant>Ich habe Sie nicht verstanden.</Assistant>
-    <IsUserMessage>false</IsUserMessage>
-  </Conversation>
-</Storage>
+<Storage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
