@@ -51,8 +51,31 @@
                    FontFamily="Fonts/#Dosis"
                    VerticalAlignment="Center"
                    Grid.Column="1"/>
+        
+        <!-- Conversation -->
+        <ScrollViewer Grid.Row="1" Grid.Column="1">
+            <ItemsControl Name="ConversationDisplay" Grid.Row="1" Grid.Column="1" ItemsSource="{Binding List}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="5">
+                            <!-- User bubble -->
+                            <Border Background="#006AFF" CornerRadius="10" Padding="10" HorizontalAlignment="Right" Margin="0,0,0,30">
+                                <TextBlock Text="{Binding User}" Foreground="White" />
+                            </Border>
+
+                            <!-- ChatBot bubble -->
+                            <Border Background="White" CornerRadius="10" Padding="10" HorizontalAlignment="Left" Margin="0,0,0,15">
+                                <TextBlock Text="{Binding Assistant}" />
+                            </Border>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
 
         <TextBox 
+            Name="Input"
             VerticalAlignment="Center"
             materialDesign:HintAssist.Hint="Nachricht an @ChatBot"
             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
@@ -73,11 +96,11 @@
         <!-- Button send -->
         <Button Content="Senden"
                 HorizontalAlignment="Center"
-                VerticalAlignment="Center"
+                VerticalAlignment="Bottom"
                 Foreground="White"
                 FontFamily="Fonts/#Dosis"
                 FontSize="14"
-                Margin="0,0,10,0"
+                Margin="0,0,10,10"
                 Grid.Column="2"
                 Grid.Row="2" Height="24" Width="100" Click="Send_Click">
 
@@ -86,6 +109,42 @@
                     <Border
                         Width="100" Height="25"
                         Background="{TemplateBinding Background}" CornerRadius="12">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#FE6584"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FF4C70"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <!-- Clear button -->
+        <Button 
+            Content="Clear"
+            Name="Clear"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Foreground="White"
+            FontFamily="Fonts/#Dosis"
+            FontSize="14"
+            Margin="0,10,10,0"
+            Grid.Column="2"
+            Grid.Row="2" Height="24" Width="100" Click="Clear_Click" Cursor="">
+
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border
+                 Width="100" Height="25"
+                 Background="{TemplateBinding Background}" CornerRadius="12">
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                     </Border>
                 </ControlTemplate>

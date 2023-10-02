@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Storage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Conversation>
+    <User>lalallalalalalalallalalalalala</User>
+    <Assistant>Ich habe Sie nicht verstanden.</Assistant>
+  </Conversation>
+  <Conversation>
+    <User>Auf wiedershene</User>
+    <Assistant>Auf Wiedersehen! Es war schön, mit Ihnen zu plaudern.</Assistant>
+  </Conversation>
+</Storage>
