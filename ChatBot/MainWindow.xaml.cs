@@ -24,5 +24,15 @@ namespace ChatBot
         {
             InitializeComponent();
         }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void Send_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
