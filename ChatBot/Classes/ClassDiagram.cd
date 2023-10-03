@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="ChatBot.MainWindow">
-    <Position X="0.5" Y="1.75" Width="3.5" />
+    <Position X="0.5" Y="1.75" Width="4.5" />
     <TypeIdentifier>
-      <HashCode>AAAIAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAACAgAQACA=</HashCode>
+      <HashCode>AAAIAAAAAAAACAAQAAAAAoAAIAAAAAAAAAFCAgAQACA=</HashCode>
       <FileName>MainWindow.xaml.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -12,39 +12,42 @@
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="ChatBot.Message">
-    <Position X="1.75" Y="7.25" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAA=</HashCode>
-      <FileName>Message.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="ChatBot.Messages">
-    <Position X="5.75" Y="4.75" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAI=</HashCode>
-      <FileName>Message.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="ChatBot.Storage">
-    <Position X="5.75" Y="1.75" Width="2.75" />
+  <Class Name="ChatBot.Classes.Storage">
+    <Position X="0.5" Y="5.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
     <NestedTypes>
-      <Class Name="ChatBot.Storage.Conversation" Collapsed="true">
+      <Class Name="ChatBot.Classes.Storage.Conversation">
         <TypeIdentifier>
-          <NewMemberFileName>Storage.cs</NewMemberFileName>
+          <NewMemberFileName>Classes\Storage.cs</NewMemberFileName>
         </TypeIdentifier>
       </Class>
     </NestedTypes>
     <TypeIdentifier>
       <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAI=</HashCode>
-      <FileName>Storage.cs</FileName>
+      <FileName>Classes\Storage.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ChatBot.BotEngine">
-    <Position X="0.5" Y="4.75" Width="3.5" />
+  <Class Name="ChatBot.Classes.Message">
+    <Position X="8" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAA=</HashCode>
+      <FileName>Classes\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatBot.Classes.Messages">
+    <Position X="3.75" Y="5.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAI=</HashCode>
+      <FileName>Classes\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatBot.Classes.BotEngine">
+    <Position X="5.75" Y="1.75" Width="4.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAABAAAIAAAAAAA=</HashCode>
-      <FileName>BotEngine.cs</FileName>
+      <FileName>Classes\BotEngine.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Field Name="messages" />

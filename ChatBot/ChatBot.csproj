@@ -12,6 +12,7 @@
     <None Remove="Resources\ChatBotLogo.ico" />
     <None Remove="Resources\ChatBotLogo.jpg" />
     <None Remove="Resources\Fullscreen.png" />
+    <None Remove="Resources\Receive.wav" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +25,7 @@
     <Resource Include="Resources\ChatBotLogo.ico" />
     <Resource Include="Resources\ChatBotLogo.jpg" />
     <Resource Include="Resources\Fullscreen.png" />
+    <Resource Include="Resources\Receive.wav" />
   </ItemGroup>
 
 </Project>

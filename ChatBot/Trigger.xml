@@ -281,10 +281,6 @@
 			<Answer>Wunderschön, bedeutsam.</Answer>
 		</Message>
 		<Message>
-			<Keyword>Geld</Keyword>
-			<Answer>Notwendig, aber nicht alles.</Answer>
-		</Message>
-		<Message>
 			<Keyword>Karriere</Keyword>
 			<Answer>Beruflicher Erfolg verfolgen.</Answer>
 		</Message>
@@ -333,16 +329,8 @@
 			<Answer>Verfolge deine Leidenschaften.</Answer>
 		</Message>
 		<Message>
-			<Keyword>Zeit</Keyword>
-			<Answer>Unsere wertvollste Ressource.</Answer>
-		</Message>
-		<Message>
 			<Keyword>Herausforderungen</Keyword>
 			<Answer>Chancen zum Wachsen.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Mut</Keyword>
-			<Answer>Überwinde deine Ängste.</Answer>
 		</Message>
 		<Message>
 			<Keyword>Glaube</Keyword>

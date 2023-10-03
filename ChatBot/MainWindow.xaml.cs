@@ -26,6 +26,7 @@ namespace ChatBot
     {
         BotEngine bot = new BotEngine();
         Storage storage = new Storage();
+        SoundPlayer soundPlayer = new SoundPlayer("../../../Resources/Receive.wav");
         public MainWindow()
         {
             InitializeComponent();
@@ -40,6 +41,8 @@ namespace ChatBot
             Uri iconUri = new Uri("pack://application:,,,/ChatBot;component/Resources/ChatBotLogo.ico", UriKind.RelativeOrAbsolute);
             this.Icon = BitmapFrame.Create(iconUri);
         }
+
+        
 
         /// <summary>
         /// Function to scroll to bottom
@@ -98,7 +101,8 @@ namespace ChatBot
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private async void Send_Click(object sender, RoutedEventArgs e)
+        private async void 
+            Send_Click(object sender, RoutedEventArgs e)
         {
             string userInput = Input.Text;
 
@@ -128,7 +132,10 @@ namespace ChatBot
                 await Task.Delay(500);
             }
 
+            
             chatbotResponse = bot.GetAnAnswer(userInput);
+            soundPlayer.PlaySync();
+
 
             var lastConversationFinal = storage.List.LastOrDefault();
             if (lastConversationFinal != null)
@@ -150,7 +157,6 @@ namespace ChatBot
             storage.Clear();
 
             ConversationDisplay.ItemsSource = null;
-            Console.WriteLine("Conversation cleared.");
         }
 
         /// <summary>
