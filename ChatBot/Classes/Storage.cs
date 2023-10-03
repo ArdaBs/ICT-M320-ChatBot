@@ -46,9 +46,8 @@ namespace ChatBot.Classes
                 XmlSerializer serializer = new XmlSerializer(typeof(Storage));
                 if (!File.Exists(filePath))
                 {
-                    // Erstelle eine leere Liste, wenn die Datei nicht existiert
                     List = new List<Conversation>();
-                    Save(); // Speichern Sie die leere Liste, um die Datei zu erstellen
+                    Save();
                 }
                 else
                 {

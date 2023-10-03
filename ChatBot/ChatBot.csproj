@@ -11,6 +11,7 @@
     <None Remove="Fonts\Dosis.ttf" />
     <None Remove="Resources\ChatBotLogo.ico" />
     <None Remove="Resources\ChatBotLogo.jpg" />
+    <None Remove="Resources\Fullscreen.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +23,7 @@
     <Resource Include="Fonts\Dosis.ttf" />
     <Resource Include="Resources\ChatBotLogo.ico" />
     <Resource Include="Resources\ChatBotLogo.jpg" />
+    <Resource Include="Resources\Fullscreen.png" />
   </ItemGroup>
 
 </Project>

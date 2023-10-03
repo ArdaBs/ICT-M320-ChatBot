@@ -40,10 +40,21 @@ namespace ChatBot
             Uri iconUri = new Uri("pack://application:,,,/ChatBot;component/Resources/ChatBotLogo.ico", UriKind.RelativeOrAbsolute);
             this.Icon = BitmapFrame.Create(iconUri);
         }
+
+        /// <summary>
+        /// Function to scroll to bottom
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             await Task.Delay(100);
             ScrollSmoothlyToBottom();
+        }
+
+        private void HideWindowButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).WindowState = WindowState.Minimized;
         }
 
 
@@ -52,11 +63,41 @@ namespace ChatBot
             storage.Save();
         }
 
+        /// <summary>
+        /// checks if its normal o maximized and changes the 
+        /// value to the oposite mode
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Fullscreen_Click(object sender, RoutedEventArgs e)
+        {
+            if (WindowState == WindowState.Normal)
+            {
+                WindowState = WindowState.Maximized;
+                Input.FontSize = 16;
+            }
+            else
+            {
+                WindowState = WindowState.Normal;
+                Input.FontSize = 12;
+            }
+        }
+
+        /// <summary>
+        /// CLoses this.Window
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Close_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
 
+        /// <summary>
+        /// Checks the best matching word and responds
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void Send_Click(object sender, RoutedEventArgs e)
         {
             string userInput = Input.Text;
@@ -99,6 +140,11 @@ namespace ChatBot
             }
         }
 
+        /// <summary>
+        /// Clearing conversation after click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
             storage.Clear();
