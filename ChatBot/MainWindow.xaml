@@ -86,7 +86,7 @@
         <TextBox 
     Name="Input"
     FontSize = "12"
-    VerticalAlignment="Center"
+    VerticalAlignment="Center"    
     materialDesign:HintAssist.Hint="Nachricht an @ChatBot"
     Style="{StaticResource MaterialDesignFloatingHintTextBox}"
     Grid.Row="2"
@@ -94,7 +94,8 @@
     Margin="10,0,0,15"
     HorizontalAlignment="Left"
     Grid.Column="1"
-    Foreground="White" Height="50">
+    Foreground="White" Height="50" 
+    PreviewKeyDown="Input_PreviewKeyDown">
             <materialDesign:TextFieldAssist.UnderlineBrush>
                 <SolidColorBrush Color="#FE6584"/>
             </materialDesign:TextFieldAssist.UnderlineBrush>

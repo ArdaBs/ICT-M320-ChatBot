@@ -147,16 +147,26 @@ namespace ChatBot
             }
         }
 
+        private void Input_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Send_Click(sender, e);
+            }
+        }
+
+
         /// <summary>
         /// Clearing conversation after click
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Clear_Click(object sender, RoutedEventArgs e)
+        private async void Clear_Click(object sender, RoutedEventArgs e)
         {
             storage.Clear();
 
             ConversationDisplay.ItemsSource = null;
+            InitializeConversation();
         }
 
         /// <summary>
