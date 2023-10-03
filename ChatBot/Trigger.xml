@@ -61,7 +61,7 @@
 	</Message>
 	<Message>
 		<Keyword>Wie lösche ich meinen Account?</Keyword>
-		<Answer>Die Account-Löschung hängt von der Plattform oder dem Dienst ab, den Sie verwenden. Bitte wenden Sie sich an den entsprechenden Support.</Answer>
+		<Answer>Die Account Löschung hängt von der Plattform oder dem Dienst ab, den Sie verwenden. Bitte wenden Sie sich an den entsprechenden Support.</Answer>
 	</Message>
 	<Message>
 		<Keyword>Was sind deine Hobbys?</Keyword>
@@ -84,7 +84,7 @@
 
 	<Message>
 		<Keyword>Wie kann ich mein Passwort zurücksetzen?</Keyword>
-		<Answer>Um Ihr Passwort zurückzusetzen, besuchen Sie die Passwort-Wiederherstellungsseite und folgen Sie den Anweisungen.</Answer>
+		<Answer>Um Ihr Passwort zurückzusetzen, besuchen Sie die Passwort Wiederherstellungsseite und folgen Sie den Anweisungen.</Answer>
 	</Message>
 	<Message>
 		<Keyword>Was ist die Hauptstadt von Frankreich?</Keyword>
@@ -107,12 +107,12 @@
 		<Answer>Sie können die Leistung Ihres Computers verbessern, indem Sie unnötige Programme schließen, Malware entfernen und Ihre Festplatte aufräumen.</Answer>
 	</Message>
 	<Message>
-		<Keyword>Was ist die beste Smartphone-Marke?</Keyword>
-		<Answer>Es gibt viele gute Smartphone-Marken, darunter Apple, Samsung, Google und mehr. Die beste hängt von Ihren persönlichen Vorlieben ab.</Answer>
+		<Keyword>Was ist die beste Smartphone Marke?</Keyword>
+		<Answer>Es gibt viele gute Smartphone Marken, darunter Apple, Samsung, Google und mehr. Die beste hängt von Ihren persönlichen Vorlieben ab.</Answer>
 	</Message>
 	<Message>
-		<Keyword>Wie kann ich meine E-Mails verschlüsseln?</Keyword>
-		<Answer>Sie können Ihre E-Mails verschlüsseln, indem Sie sichere E-Mail-Dienste verwenden und End-to-End-Verschlüsselung aktivieren.</Answer>
+		<Keyword>Wie kann ich meine E Mails verschlüsseln?</Keyword>
+		<Answer>Sie können Ihre E Mails verschlüsseln, indem Sie sichere E Mail Dienste verwenden und End to End Verschlüsselung aktivieren.</Answer>
 	</Message>
 	<Message>
 		<Keyword>Was ist der Unterschied zwischen TCP und UDP?</Keyword>
@@ -134,7 +134,7 @@
 	</Message>
 	<Message>
 		<Keyword>Wie erstelle ich eine Webseite?</Keyword>
-		<Answer>Sie können eine Webseite erstellen, indem Sie HTML, CSS und gegebenenfalls JavaScript verwenden oder Website-Baukästen nutzen.</Answer>
+		<Answer>Sie können eine Webseite erstellen, indem Sie HTML, CSS und gegebenenfalls JavaScript verwenden oder Website Baukästen nutzen.</Answer>
 	</Message>
 	<Message>
 		<Keyword>Was sind die besten Tipps für produktives Arbeiten von zu Hause aus?</Keyword>
@@ -142,7 +142,7 @@
 	</Message>
 	<Message>
 		<Keyword>Wie kann ich mein Smartphone vor Viren schützen?</Keyword>
-		<Answer>Sie können Ihr Smartphone schützen, indem Sie Apps nur aus vertrauenswürdigen Quellen herunterladen, Software-Updates durchführen und eine Antiviren-App installieren.</Answer>
+		<Answer>Sie können Ihr Smartphone schützen, indem Sie Apps nur aus vertrauenswürdigen Quellen herunterladen, Software Updates durchführen und eine Antiviren App installieren.</Answer>
 	</Message>
 	<Message>
 		<Keyword>Was ist Nachhaltigkeit?</Keyword>
@@ -178,11 +178,11 @@
 	</Message>
 	<Message>
 		<Keyword>Was ist der Unterschied zwischen 4G und 5G?</Keyword>
-		<Answer>5G ist eine schnellere Mobilfunktechnologie im Vergleich zu 4G, was schnellere Download- und Upload-Geschwindigkeiten sowie geringere Latenzzeiten ermöglicht.</Answer>
+		<Answer>5G ist eine schnellere Mobilfunktechnologie im Vergleich zu 4G, was schnellere Download und Upload Geschwindigkeiten sowie geringere Latenzzeiten ermöglicht.</Answer>
 	</Message>
 	<Message>
 		<Keyword>Wie kann ich einen Job finden?</Keyword>
-		<Answer>Sie können einen Job finden, indem Sie Online-Jobbörsen durchsuchen, Netzwerken, Lebensläufe erstellen und sich auf Stellenangebote bewerben.</Answer>
+		<Answer>Sie können einen Job finden, indem Sie Online Jobbörsen durchsuchen, Netzwerken, Lebensläufe erstellen und sich auf Stellenangebote bewerben.</Answer>
 	</Message>
 	<Message>
 		<Keyword>Was ist der beste Weg, um Stress abzubauen?</Keyword>
