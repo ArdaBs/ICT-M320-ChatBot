@@ -41,7 +41,7 @@ namespace ChatBot.Classes
             }
             else
             {
-                answer = "Ich habe Sie nicht verstanden.";
+                answer = "Es tut mir leid, ich habe Sie nicht verstanden.";
             }
 
             return answer;

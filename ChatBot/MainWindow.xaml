@@ -21,6 +21,7 @@
             <ColumnDefinition Width="519*"/>
             <ColumnDefinition Width="150"/>
         </Grid.ColumnDefinitions>
+        
         <Grid 
             Background="#0F0F2D" 
             Grid.ColumnSpan="3" 
@@ -33,9 +34,9 @@
             />
 
         <Grid 
-    Background="#0F0F2D" 
-    Grid.ColumnSpan="3" 
-    Grid.Row="3"/>
+            Background="#0F0F2D" 
+            Grid.ColumnSpan="3" 
+            Grid.Row="3"/>
 
         <!-- ChatBot logo and naming -->
         <Ellipse 
@@ -65,12 +66,12 @@
                         <StackPanel Margin="5">
                             <!-- User bubble -->
                             <Border Background="#006AFF" CornerRadius="10" Padding="10" HorizontalAlignment="Right" Margin="0,0,0,30">
-                                <TextBlock Text="{Binding User}" Foreground="White" />
+                                <TextBlock Text="{Binding User}" Foreground="White" TextWrapping="Wrap" />
                             </Border>
 
                             <!-- ChatBot bubble -->
                             <Border Background="White" CornerRadius="10" Padding="10" HorizontalAlignment="Left" Margin="0,0,0,15">
-                                <TextBlock Text="{Binding Assistant}" />
+                                <TextBlock Text="{Binding Assistant}" TextWrapping="Wrap"/>
                             </Border>
                         </StackPanel>
                     </DataTemplate>
@@ -78,7 +79,7 @@
             </ItemsControl>
         </ScrollViewer>
 
-
+        <!-- Text input -->
         <TextBox 
             Name="Input"
             VerticalAlignment="Center"

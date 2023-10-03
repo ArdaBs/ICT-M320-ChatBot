@@ -8,12 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\Dosis.ttf" />
     <None Remove="Resources\ChatBotLogo.ico" />
     <None Remove="Resources\ChatBotLogo.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Fonts\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Fonts\Dosis.ttf" />
     <Resource Include="Resources\ChatBotLogo.ico" />
     <Resource Include="Resources\ChatBotLogo.jpg" />
   </ItemGroup>
