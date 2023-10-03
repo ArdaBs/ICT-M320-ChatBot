@@ -53,7 +53,7 @@
 	</Message>
 	<Message>
 		<Keyword>Wie kann ich dich ausschalten?</Keyword>
-		<Answer>Sie können mich einfach schließen oder den Chat beenden, wenn Sie fertig sind.</Answer>
+		<Answer>Sie können mich einfach schliessen oder den Chat beenden, wenn Sie fertig sind.</Answer>
 	</Message>
 	<Message>
 		<Keyword>Was ist deine Lieblingsfarbe?</Keyword>
@@ -69,7 +69,7 @@
 	</Message>
 	<Message>
 		<Keyword>Was ist der beste Film aller Zeiten?</Keyword>
-		<Answer>Es gibt viele großartige Filme, und die Meinungen darüber variieren stark. Einige Klassiker sind "Der Pate", "Die Verurteilten" und "Casablanca".</Answer>
+		<Answer>Es gibt viele grossartige Filme, und die Meinungen darüber variieren stark. Einige Klassiker sind "Der Pate", "Die Verurteilten" und "Casablanca".</Answer>
 	</Message>
 	<Message>
 		<Keyword>Wie funktioniert Künstliche Intelligenz?</Keyword>
@@ -79,7 +79,7 @@
 	</Message>
 	<Message>
 		<Keyword>Was ist dein Lieblingsbuch?</Keyword>
-		<Answer>Als Computerprogramm habe ich keine Vorlieben für Bücher, aber es gibt viele großartige Bücher in verschiedenen Genres.</Answer>
+		<Answer>Als Computerprogramm habe ich keine Vorlieben für Bücher, aber es gibt viele grossartige Bücher in verschiedenen Genres.</Answer>
 	</Message>
 
 	<Message>
@@ -100,11 +100,11 @@
 	</Message>
 	<Message>
 		<Keyword>Wie kann ich abnehmen?</Keyword>
-		<Answer>Abnehmen erfordert eine gesunde Ernährung und regelmäßige körperliche Aktivität. Es ist ratsam, einen Arzt oder Ernährungsberater zu konsultieren.</Answer>
+		<Answer>Abnehmen erfordert eine gesunde Ernährung und regelmässige körperliche Aktivität. Es ist ratsam, einen Arzt oder Ernährungsberater zu konsultieren.</Answer>
 	</Message>
 	<Message>
 		<Keyword>Wie kann ich meinen Computer schneller machen?</Keyword>
-		<Answer>Sie können die Leistung Ihres Computers verbessern, indem Sie unnötige Programme schließen, Malware entfernen und Ihre Festplatte aufräumen.</Answer>
+		<Answer>Sie können die Leistung Ihres Computers verbessern, indem Sie unnötige Programme schliessen, Malware entfernen und Ihre Festplatte aufräumen.</Answer>
 	</Message>
 	<Message>
 		<Keyword>Was ist die beste Smartphone Marke?</Keyword>
@@ -122,7 +122,7 @@
 	</Message>
 	<Message>
 		<Keyword>Wie kann ich meine Daten sichern?</Keyword>
-		<Answer>Sie können Ihre Daten sichern, indem Sie regelmäßige Backups auf externen Festplatten oder in der Cloud erstellen.</Answer>
+		<Answer>Sie können Ihre Daten sichern, indem Sie regelmässige Backups auf externen Festplatten oder in der Cloud erstellen.</Answer>
 	</Message>
 	<Message>
 		<Keyword>Wie funktioniert das Internet?</Keyword>
@@ -158,7 +158,7 @@
 	</Message>
 	<Message>
 		<Keyword>Wie kann ich effektiv lernen?</Keyword>
-		<Answer>Effektives Lernen erfordert Planung, Konzentration, aktives Zuhören und regelmäßiges Wiederholen des Gelernten.</Answer>
+		<Answer>Effektives Lernen erfordert Planung, Konzentration, aktives Zuhören und regelmässiges Wiederholen des Gelernten.</Answer>
 	</Message>
 	<Message>
 		<Keyword>Was sind erneuerbare Energien?</Keyword>
@@ -174,7 +174,7 @@
 	</Message>
 	<Message>
 		<Keyword>Wie kann ich meine Konzentration verbessern?</Keyword>
-		<Answer>Sie können Ihre Konzentration verbessern, indem Sie Ablenkungen minimieren, Pausen einplanen, regelmäßig Sport treiben und ausreichend schlafen.</Answer>
+		<Answer>Sie können Ihre Konzentration verbessern, indem Sie Ablenkungen minimieren, Pausen einplanen, regelmässig Sport treiben und ausreichend schlafen.</Answer>
 	</Message>
 	<Message>
 		<Keyword>Was ist der Unterschied zwischen 4G und 5G?</Keyword>
@@ -205,8 +205,8 @@
 		<Answer>Motivation kann gesteigert werden, indem Sie klare Ziele setzen, Ihre Leidenschaften verfolgen und sich von positiven Vorbildern inspirieren lassen.</Answer>
 	</Message>
 	<Message>
-		<Keyword>Was sind die Vorteile von regelmäßiger Bewegung?</Keyword>
-		<Answer>Regelmäßige Bewegung bietet Vorteile wie bessere Gesundheit, Stressabbau, gesteigerte Energie und verbesserte Stimmung.</Answer>
+		<Keyword>Was sind die Vorteile von regelmässiger Bewegung?</Keyword>
+		<Answer>Regelmässige Bewegung bietet Vorteile wie bessere Gesundheit, Stressabbau, gesteigerte Energie und verbesserte Stimmung.</Answer>
 	</Message>
 	<Message>
 		<Keyword>Wie kann ich meine Selbstdisziplin stärken?</Keyword>
@@ -270,6 +270,162 @@
 	</Message>
 	<Message>
 		<Keyword>Was sind die Grundlagen eines gesunden Lebensstils?</Keyword>
-		<Answer>Ein gesunder Lebensstil beinhaltet eine ausgewogene Ernährung, regelmäßige Bewegung, ausreichend Schlaf und Stressbewältigung.</Answer>
+		<Answer>Ein gesunder Lebensstil beinhaltet eine ausgewogene Ernährung, regelmässige Bewegung, ausreichend Schlaf und Stressbewältigung.</Answer>
 	</Message>
-</Messages>
+		<Message>
+			<Keyword>Gesundheit</Keyword>
+			<Answer>Wichtig. Pflege dich gut.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Liebe</Keyword>
+			<Answer>Wunderschön, bedeutsam.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Geld</Keyword>
+			<Answer>Notwendig, aber nicht alles.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Karriere</Keyword>
+			<Answer>Beruflicher Erfolg verfolgen.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Bildung</Keyword>
+			<Answer>Lebenslanges Lernen.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Freude</Keyword>
+			<Answer>Gelächter und Glück.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Ziele</Keyword>
+			<Answer>Klare Richtung setzen.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Veränderung</Keyword>
+			<Answer>Teil des Lebens.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Verantwortung</Keyword>
+			<Answer>Für Handlungen aufkommen.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Frieden</Keyword>
+			<Answer>Innere Ruhe finden.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Lebensstil</Keyword>
+			<Answer>Gesunde Gewohnheiten.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Fähigkeiten</Keyword>
+			<Answer>Weiterentwicklung.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Entscheidungen</Keyword>
+			<Answer>Weichen für die Zukunft stellen.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Kreativität</Keyword>
+			<Answer>Denk ausserhalb der Box.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Träume</Keyword>
+			<Answer>Verfolge deine Leidenschaften.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Zeit</Keyword>
+			<Answer>Unsere wertvollste Ressource.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Herausforderungen</Keyword>
+			<Answer>Chancen zum Wachsen.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Mut</Keyword>
+			<Answer>Überwinde deine Ängste.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Glaube</Keyword>
+			<Answer>An dich selbst glauben.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Balance</Keyword>
+			<Answer>Harmonie in allem.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Gesellschaft</Keyword>
+			<Answer>Gemeinschaft und Zusammenhalt.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Wandel</Keyword>
+			<Answer>Die einzige Konstante im Leben.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Geben</Keyword>
+			<Answer>Teilen und anderen helfen.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Geduld</Keyword>
+			<Answer>Warten können.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Erfüllung</Keyword>
+			<Answer>Innere Zufriedenheit finden.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Reisen</Keyword>
+			<Answer>Die Welt entdecken.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Genuss</Keyword>
+			<Answer>Leben in vollen Zügen.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Schicksal</Keyword>
+			<Answer>Das Unvermeidliche akzeptieren.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Abenteuer</Keyword>
+			<Answer>Das Unbekannte erkunden.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Loslassen</Keyword>
+			<Answer>Vergangenes hinter sich lassen.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Glücklich sein</Keyword>
+			<Answer>Das ist das Ziel.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Erinnerungen</Keyword>
+			<Answer>Die Schätze des Lebens.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Menschlichkeit</Keyword>
+			<Answer>Empathie und Mitgefühl.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Anerkennung</Keyword>
+			<Answer>Wertschätzung zeigen.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Selbstentwicklung</Keyword>
+			<Answer>Ständiges Wachstum.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Erholung</Keyword>
+			<Answer>Ruhe und Entspannung.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Kommunikation</Keyword>
+			<Answer>Verbindung herstellen.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Natur</Keyword>
+			<Answer>Die Schönheit der Welt.</Answer>
+		</Message>
+		<Message>
+			<Keyword>Erfolg</Keyword>
+			<Answer>Ziele erreichen.</Answer>
+		</Message>
+	</Messages>

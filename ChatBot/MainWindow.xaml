@@ -90,7 +90,7 @@
     materialDesign:HintAssist.Hint="Nachricht an @ChatBot"
     Style="{StaticResource MaterialDesignFloatingHintTextBox}"
     Grid.Row="2"
-    MaxLength="25"
+    MaxLength="50"
     Margin="10,0,0,15"
     HorizontalAlignment="Left"
     Grid.Column="1"
@@ -212,7 +212,7 @@
         <!-- Window buttons -->
         <Button Grid.Row="0" Grid.Column="2" 
         HorizontalAlignment="Right"
-        Margin="0,0,40,0"
+        Margin="0,0,30,0"
         Click="Fullscreen_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -234,7 +234,7 @@
 
         <Button Grid.Row="0" Grid.Column="2"
                 HorizontalAlignment="Right"
-                Margin="0,0,65,0"
+                Margin="0,0,55,0"
                 Click="HideWindowButton_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -256,7 +256,7 @@
 
         <Button Grid.Row="0" Grid.Column="2"
                 HorizontalAlignment="Right"
-                Margin="0,0,90,0"
+                Margin="0,0,80,0"
                 Click="Close_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
