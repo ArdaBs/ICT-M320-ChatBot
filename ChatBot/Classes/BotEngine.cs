@@ -30,14 +30,28 @@ namespace ChatBot.Classes
         {
             string answer = "";
 
-            string bestMatch = messages.Select(m => m.Keyword).OrderBy(keyword => ComputeLevenshteinDistance(input, keyword)).First();
+            // Convert the input to lowercase
+            input = input.ToLower();
 
-            int distance = ComputeLevenshteinDistance(input, bestMatch);
+            // Convert all keywords to lowercase and find the best match
+            var bestMatch = messages
+                .Select(m => new { Message = m, KeywordLower = m.Keyword.ToLower() })
+                .OrderBy(entry => ComputeLevenshteinDistance(input, entry.KeywordLower))
+                .FirstOrDefault();
 
-            //Can be changed
-            if (distance <= 3)
+            if (bestMatch != null)
             {
-                answer = messages.First(m => m.Keyword == bestMatch).Answer;
+                int distance = ComputeLevenshteinDistance(input, bestMatch.KeywordLower);
+
+                // Can be changed
+                if (distance <= 3)
+                {
+                    answer = bestMatch.Message.Answer;
+                }
+                else
+                {
+                    answer = "Es tut mir leid, ich habe Sie nicht verstanden.";
+                }
             }
             else
             {
