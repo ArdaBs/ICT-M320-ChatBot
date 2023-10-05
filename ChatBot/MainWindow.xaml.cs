@@ -1,22 +1,12 @@
-﻿using System;
-using NAudio.Wave;
-using System.Media;
-using System.Collections.Generic;
+﻿using ChatBot.Classes;
+using System;
 using System.Linq;
-using System.Text;
+using System.Media;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.IO;
-using ChatBot.Classes;
 using System.Windows.Media.Animation;
+using System.Windows.Media.Imaging;
 
 namespace ChatBot
 {
@@ -184,7 +174,7 @@ namespace ChatBot
 
 
             chatbotResponse = bot.GetAnAnswer(userInput);
-            soundPlayer.PlaySync();
+            
 
 
             var lastConversationFinal = storage.List.LastOrDefault();
@@ -192,6 +182,7 @@ namespace ChatBot
             {
                 lastConversationFinal.Assistant = chatbotResponse;
                 ConversationDisplay.Items.Refresh();
+                soundPlayer.Play();
 
                 ScrollSmoothlyToBottom();
             }
@@ -216,7 +207,7 @@ namespace ChatBot
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private async void Clear_Click(object sender, RoutedEventArgs e)
+        private void Clear_Click(object sender, RoutedEventArgs e)
         {
             storage.Clear();
 
@@ -255,9 +246,9 @@ namespace ChatBot
             {
                 DateTime currentTime = DateTime.Now;
 
-                storage.List.Add(new Storage.Conversation { User = "Hey ChatBot", Assistant = "Hey Meister, wie kann ich Ihnen helfen?", Timestamp = currentTime , IsUserMessage = false });
+                storage.List.Add(new Storage.Conversation { User = "Hey ChatBot", Assistant = "Hallo Meister, wie kann ich Ihnen helfen?", Timestamp = currentTime, IsUserMessage = false });
                 ConversationDisplay.ItemsSource = storage.List;
-                soundPlayer.PlaySync();
+                soundPlayer.Play();
             }
         }
     }
