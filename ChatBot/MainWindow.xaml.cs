@@ -16,6 +16,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 using ChatBot.Classes;
+using System.Windows.Media.Animation;
 
 namespace ChatBot
 {
@@ -55,9 +56,54 @@ namespace ChatBot
             ScrollSmoothlyToBottom();
         }
 
+        /// <summary>
+        /// If button pressed window gets darker until its minimized
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void HideWindowButton_Click(object sender, RoutedEventArgs e)
         {
-            Window.GetWindow(this).WindowState = WindowState.Minimized;
+            Window window = Window.GetWindow(this);
+
+            if (window.WindowState == WindowState.Normal)
+            {
+                // Darken the window before minimizing
+                DoubleAnimation darkenAnimation = new DoubleAnimation();
+                darkenAnimation.From = 1.0;
+                darkenAnimation.To = 0.5;
+                darkenAnimation.Duration = TimeSpan.FromSeconds(0.5);
+
+                // Add a completed event handler to minimize the window when the animation finishes
+                darkenAnimation.Completed += (s, args) =>
+                {
+                    window.WindowState = WindowState.Minimized;
+
+                    DoubleAnimation resetAnimation = new DoubleAnimation();
+                    resetAnimation.From = 0.5;
+                    resetAnimation.To = 1.0;
+                    resetAnimation.Duration = TimeSpan.FromSeconds(0.5);
+
+                    window.BeginAnimation(Window.OpacityProperty, resetAnimation);
+                };
+
+                window.BeginAnimation(Window.OpacityProperty, darkenAnimation);
+            }
+            else if (window.WindowState == WindowState.Minimized)
+            {
+                DoubleAnimation restoreAnimation = new DoubleAnimation();
+                restoreAnimation.From = 0.5;
+                restoreAnimation.To = 1.0;
+                restoreAnimation.Duration = TimeSpan.FromSeconds(0.5);
+
+                // Add a completed event handler to set the window state to Normal when the animation finishes
+                restoreAnimation.Completed += (s, args) =>
+                {
+                    window.WindowState = WindowState.Normal;
+                };
+
+                // Apply the restore animation to the windows opacity property
+                window.BeginAnimation(Window.OpacityProperty, restoreAnimation);
+            }
         }
 
 
@@ -147,6 +193,11 @@ namespace ChatBot
             }
         }
 
+        /// <summary>
+        /// Allows to send also with "Enter"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Input_PreviewKeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
@@ -200,6 +251,7 @@ namespace ChatBot
             {
                 storage.List.Add(new Storage.Conversation { User = "Hey ChatBot", Assistant = "Hey Meister, wie kann ich Ihnen helfen?", IsUserMessage = false });
                 ConversationDisplay.ItemsSource = storage.List;
+                soundPlayer.PlaySync();
             }
         }
     }

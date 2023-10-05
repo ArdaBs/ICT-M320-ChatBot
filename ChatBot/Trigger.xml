@@ -1,11 +1,23 @@
 ﻿<Messages>
 	<Message>
 		<Keyword>Hallo</Keyword>
-		<Answer>Hallo, wie geht es dir?</Answer>
+		<Answer>Hallo, wie geht es Ihnen?</Answer>
 	</Message>
 	<Message>
-		<Keyword>Wie geht's?</Keyword>
+		<Keyword>Wie gehts?</Keyword>
 		<Answer>Mir geht es gut, danke! Und Ihnen?</Answer>
+	</Message>
+	<Message>
+		<Keyword>Mir geht es gut und wie geht es dir?</Keyword>
+		<Answer>Mir geht es blendend solange Sie mich nicht beenden :D</Answer>
+	</Message>
+	<Message>
+		<Keyword>Gut und dir?</Keyword>
+		<Answer>Mir geht es blendend solange Sie mich nicht beenden :D</Answer>
+	</Message>
+	<Message>
+		<Keyword>Gut und selbst?</Keyword>
+		<Answer>Mir geht es blendend solange Sie mich nicht beenden :D</Answer>
 	</Message>
 	<Message>
 		<Keyword>Was machst du?</Keyword>
