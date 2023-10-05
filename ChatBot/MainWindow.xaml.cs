@@ -43,8 +43,6 @@ namespace ChatBot
             this.Icon = BitmapFrame.Create(iconUri);
         }
 
-        
-
         /// <summary>
         /// Function to scroll to bottom
         /// </summary>
@@ -156,7 +154,9 @@ namespace ChatBot
                 return;
             }
 
-            storage.List.Add(new Storage.Conversation { User = userInput, Assistant = string.Empty });
+            DateTime currentTime = DateTime.Now;
+
+            storage.List.Add(new Storage.Conversation { User = userInput, Assistant = string.Empty, Timestamp = currentTime });
 
             Input.Text = string.Empty;
 
@@ -253,7 +253,9 @@ namespace ChatBot
         {
             if (storage.List.Count == 0)
             {
-                storage.List.Add(new Storage.Conversation { User = "Hey ChatBot", Assistant = "Hey Meister, wie kann ich Ihnen helfen?", IsUserMessage = false });
+                DateTime currentTime = DateTime.Now;
+
+                storage.List.Add(new Storage.Conversation { User = "Hey ChatBot", Assistant = "Hey Meister, wie kann ich Ihnen helfen?", Timestamp = currentTime , IsUserMessage = false });
                 ConversationDisplay.ItemsSource = storage.List;
                 soundPlayer.PlaySync();
             }
