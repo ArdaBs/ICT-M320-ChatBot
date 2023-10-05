@@ -1,12 +1,17 @@
 ﻿using ChatBot.Classes;
+using Microsoft.Win32;
 using System;
+using System.Windows.Media;
 using System.Linq;
 using System.Media;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace ChatBot
 {
@@ -26,8 +31,35 @@ namespace ChatBot
             DataContext = storage;
             Application.Current.Exit += Current_Exit;
             Loaded += MainWindow_Loaded;
-
             InitializeConversation();
+            AppSettings settings = LoadSettings();
+
+            // Checks settings and selects the right color with index
+            if (settings.IsDarkMode)
+            {
+                SetDarkMode();
+                ThemeColor.SelectedIndex = 0;
+            }
+            else
+            {
+                SetLightMode();
+                ThemeColor.SelectedIndex = 1;
+            }
+
+            if (settings.IsSystemMode)
+            {
+                var systemMode = GetSystemThemeMode();
+                if (systemMode == SystemThemeMode.Dark)
+                {
+                    SetDarkMode();
+                    ThemeColor.SelectedIndex = 2;
+                }
+                else
+                {
+                    SetLightMode();
+                    ThemeColor.SelectedIndex = 2;
+                }
+            }
 
             Uri iconUri = new Uri("pack://application:,,,/ChatBot;component/Resources/ChatBotLogo.ico", UriKind.RelativeOrAbsolute);
             this.Icon = BitmapFrame.Create(iconUri);
@@ -172,11 +204,8 @@ namespace ChatBot
                 await Task.Delay(500);
             }
 
-
             chatbotResponse = bot.GetAnAnswer(userInput);
             
-
-
             var lastConversationFinal = storage.List.LastOrDefault();
             if (lastConversationFinal != null)
             {
@@ -200,7 +229,6 @@ namespace ChatBot
                 Send_Click(sender, e);
             }
         }
-
 
         /// <summary>
         /// Clearing conversation after click
@@ -251,5 +279,169 @@ namespace ChatBot
                 soundPlayer.Play();
             }
         }
+
+        /// <summary>
+        /// If combox value gets changed it checks what color app should have
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var comboBox = (ComboBox)sender;
+            var selectedItem = (ComboBoxItem)comboBox.SelectedItem;
+
+            if (selectedItem.Content.ToString() == "Hell")
+            {
+                SetLightMode();
+                SaveSettings(false, false);
+            }
+            else if (selectedItem.Content.ToString() == "Dunkel")
+            {
+                SetDarkMode();
+                SaveSettings(true, false);
+            }
+            else if (selectedItem.Content.ToString() == "System")
+            {
+                var systemMode = GetSystemThemeMode();
+                if (systemMode == SystemThemeMode.Dark)
+                {
+                    SetDarkMode();
+                    SaveSettings(true, true);
+                }
+                else
+                {
+                    SetLightMode();
+                    SaveSettings(false, true);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Saves mode. If both false then LightMode
+        /// </summary>
+        /// <param name="isDarkMode"></param>
+        /// <param name="isSystemMode"></param>
+        private void SaveSettings(bool isDarkMode, bool isSystemMode)
+        {
+            AppSettings settings = new AppSettings
+            {
+                IsDarkMode = isDarkMode,
+                IsSystemMode = isSystemMode,
+            };
+
+            //path for settings
+            string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string chatBotFolder = Path.Combine(appDataPath, "ChatBot01");
+            string settingsFilePath = Path.Combine(chatBotFolder, "Theme.xml");
+
+            try
+            {
+                if (!Directory.Exists(chatBotFolder))
+                {
+                    Directory.CreateDirectory(chatBotFolder);
+                }
+
+                using (FileStream stream = new FileStream(settingsFilePath, FileMode.Create))
+                {
+                    XmlSerializer serializer = new XmlSerializer(typeof(AppSettings));
+                    serializer.Serialize(stream, settings);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Fehler beim Speichern der Einstellungen: " + ex.Message, "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        /// <summary>
+        /// Reads the setting file
+        /// </summary>
+        /// <returns></returns>
+        private AppSettings LoadSettings()
+        {
+            string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string chatBotFolder = Path.Combine(appDataPath, "ChatBot01");
+            string settingsFilePath = Path.Combine(chatBotFolder, "Theme.xml");
+
+            if (File.Exists(settingsFilePath))
+            {
+                try
+                {
+                    using (FileStream stream = new FileStream(settingsFilePath, FileMode.Open))
+                    {
+                        XmlSerializer serializer = new XmlSerializer(typeof(AppSettings));
+                        return (AppSettings)serializer.Deserialize(stream);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Fehler beim Lesen der Einstellungen: " + ex.Message, "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+
+            return new AppSettings();
+        }
+
+        /// <summary>
+        /// Setting colors for important items
+        /// </summary>
+        private void SetLightMode()
+        {
+            Background = new SolidColorBrush(Color.FromRgb(220, 220, 220));
+            ChatBotTitle.Foreground = Brushes.Black;
+            Grid1.Background = new SolidColorBrush(Color.FromRgb(250, 250, 250));
+            Grid2.Background = new SolidColorBrush(Color.FromRgb(250, 250, 250));
+            Grid3.Background = new SolidColorBrush(Color.FromRgb(250, 250, 250));
+            ThemeColorBorder.Background = new SolidColorBrush(Color.FromRgb(250, 250, 250));
+            ThemeColorBorder.BorderBrush = Brushes.Transparent;
+            ThemeColor.Foreground = Brushes.Black;
+            InputBorder.Background = new SolidColorBrush(Color.FromRgb(220, 220, 220));
+            InputBorder.BorderBrush = Brushes.Transparent;
+            Input.Foreground = Brushes.Black;
+        }
+
+        /// <summary>
+        /// Setting colors for important items
+        /// </summary>
+        private void SetDarkMode()
+        {
+            Background = new SolidColorBrush(Color.FromRgb(24, 23, 53));
+            Grid1.Background = new SolidColorBrush(Color.FromRgb(15, 15, 45));
+            Grid2.Background = new SolidColorBrush(Color.FromRgb(15, 15, 45));
+            Grid3.Background = new SolidColorBrush(Color.FromRgb(15, 15, 45));
+            ThemeColorBorder.Background = new SolidColorBrush(Color.FromRgb(44, 47, 51));
+            InputBorder.Background = new SolidColorBrush(Color.FromRgb(44, 47, 51));
+
+            ChatBotTitle.Foreground = Brushes.White;
+            ThemeColor.Foreground = Brushes.White;
+            Input.Foreground = Brushes.White;
+        }
+
+        /// <summary>
+        /// Gets information from system if its dark or light mode
+        /// </summary>
+        /// <returns></returns>
+        private SystemThemeMode GetSystemThemeMode()
+        {
+            using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"))
+            {
+                if (key != null)
+                {
+                    object registryValue = key.GetValue("AppsUseLightTheme");
+                    if (registryValue != null && (int)registryValue == 0)
+                    {
+                        return SystemThemeMode.Dark;
+                    }
+                }
+            }
+            return SystemThemeMode.Light;
+        }
+
+        public enum SystemThemeMode
+        {
+            Light,
+            Dark
+        }
+
     }
 }

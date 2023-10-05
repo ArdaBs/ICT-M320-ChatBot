@@ -23,16 +23,19 @@
         </Grid.ColumnDefinitions>
 
         <Grid
+            x:Name="Grid1"
             Background="#0F0F2D"
             Grid.ColumnSpan="3"
             Grid.Row="0" />
 
         <Grid
+            x:Name="Grid2"
             Background="#0F0F2D"
             Grid.RowSpan="3"
             Grid.Row="0"/>
 
         <Grid
+            x:Name="Grid3"
             Background="#0F0F2D"
             Grid.ColumnSpan="3"
             Grid.Row="3" />
@@ -50,7 +53,9 @@
             </Ellipse.Clip>
         </Ellipse>
 
-        <TextBlock Text="ChatBot"
+        <TextBlock 
+            x:Name="ChatBotTitle"
+            Text="ChatBot"
             Foreground="White"
             FontSize="30"
             FontFamily="Fonts/#Dosis"
@@ -107,6 +112,7 @@
 
         <!-- Text input -->
         <Border
+            x:Name="InputBorder"
             Background="#2C2F33"
             BorderBrush="#2C2F33"
             BorderThickness="1"
@@ -114,7 +120,7 @@
             Grid.Row="2"
             Grid.Column="1"
             Margin="0,15,0,15">
-            
+
             <TextBox
                 Name="Input"
                 FontSize="12"
@@ -225,14 +231,14 @@
                             <Trigger.EnterActions>
                                 <BeginStoryboard>
                                     <Storyboard>
-                                        <ColorAnimation Duration="0:0:0.5" Storyboard.TargetName="border" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="Red"/>
+                                        <ColorAnimation Duration="0:0:0.3" Storyboard.TargetName="border" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="Red"/>
                                     </Storyboard>
                                 </BeginStoryboard>
                             </Trigger.EnterActions>
                             <Trigger.ExitActions>
                                 <BeginStoryboard>
                                     <Storyboard>
-                                        <ColorAnimation Duration="0:0:0.5" Storyboard.TargetName="border" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="#006AFF"/>
+                                        <ColorAnimation Duration="0:0:0.3" Storyboard.TargetName="border" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="#006AFF"/>
                                     </Storyboard>
                                 </BeginStoryboard>
                             </Trigger.ExitActions>
@@ -257,6 +263,47 @@
             </Button.ToolTip>
         </Button>
 
+        <!-- System Theme -->
+        <Border
+            x:Name="ThemeColorBorder"
+            HorizontalAlignment="Right"
+            Background="#2C2F33"
+            BorderBrush="#2C2F33"
+            BorderThickness="1"
+            CornerRadius="5"
+            Grid.Row="0"
+            Grid.Column="1"
+            MaxWidth="200"
+            Margin="0,15,0,15">
+
+            <ComboBox
+                x:Name="ThemeColor"
+        Grid.Row="0" Grid.Column="1"
+                Width="200"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        Foreground="White"
+        materialDesign:HintAssist.Hint="Anwendungsthema"
+        Style="{StaticResource MaterialDesignFilledComboBox}"
+                SelectionChanged="ComboBox_SelectionChanged">
+
+                <ComboBox.ItemContainerStyle>
+                    <Style TargetType="ComboBoxItem">
+                        <Setter Property="Foreground" Value="Black"/>
+                    </Style>
+                </ComboBox.ItemContainerStyle>
+
+                <ComboBoxItem Content="Dunkel"/>
+                <ComboBoxItem Content="Hell" />
+                <ComboBoxItem Content="System" />
+                <materialDesign:TextFieldAssist.UnderlineBrush>
+                    <SolidColorBrush Color="#006AFF" />
+                </materialDesign:TextFieldAssist.UnderlineBrush>
+                <materialDesign:HintAssist.Foreground>
+                    <SolidColorBrush Color="#0077FF" />
+                </materialDesign:HintAssist.Foreground>
+            </ComboBox>
+        </Border>
+        
         <!-- Window buttons -->
         <Button Grid.Row="0" Grid.Column="2"
             HorizontalAlignment="Right"

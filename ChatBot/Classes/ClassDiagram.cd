@@ -2,8 +2,15 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="ChatBot.MainWindow">
     <Position X="0.5" Y="1.75" Width="4.5" />
+    <NestedTypes>
+      <Enum Name="ChatBot.MainWindow.SystemThemeMode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MainWindow.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAIAAAAAAAACAAQAAAAAoAAIAAAAAAAAAFCAgAQACA=</HashCode>
+      <HashCode>AAAIAAQAAAAACIAwAABAAsAAIJAAAAAAAABCEgAQACA=</HashCode>
       <FileName>MainWindow.xaml.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -13,7 +20,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ChatBot.Classes.Storage">
-    <Position X="0.5" Y="5.5" Width="2.75" />
+    <Position X="0.5" Y="7.25" Width="2.75" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
@@ -30,21 +37,21 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ChatBot.Classes.Message">
-    <Position X="8" Y="3.75" Width="2.25" />
+    <Position X="6.25" Y="3.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAA=</HashCode>
       <FileName>Classes\Message.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ChatBot.Classes.Messages">
-    <Position X="3.75" Y="5.5" Width="2.75" />
+    <Position X="4" Y="7.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAI=</HashCode>
       <FileName>Classes\Message.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ChatBot.Classes.BotEngine">
-    <Position X="5.75" Y="1.75" Width="4.5" />
+    <Position X="6.25" Y="1.75" Width="4.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAABAAAIAAAAAAA=</HashCode>
       <FileName>Classes\BotEngine.cs</FileName>
@@ -53,5 +60,19 @@
       <Field Name="messages" />
     </ShowAsCollectionAssociation>
   </Class>
+  <Class Name="ChatBot.Classes.AppSettings">
+    <Position X="8.75" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Classes\AppSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ChatBot.Classes.SystemThemeMode">
+    <Position X="8.75" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\AppSettings.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
