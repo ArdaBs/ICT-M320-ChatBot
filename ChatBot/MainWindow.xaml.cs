@@ -147,10 +147,14 @@ namespace ChatBot
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private async void 
-            Send_Click(object sender, RoutedEventArgs e)
+        private async void Send_Click(object sender, RoutedEventArgs e)
         {
-            string userInput = Input.Text;
+            string userInput = Input.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(userInput))
+            {
+                return;
+            }
 
             storage.List.Add(new Storage.Conversation { User = userInput, Assistant = string.Empty });
 
@@ -178,7 +182,7 @@ namespace ChatBot
                 await Task.Delay(500);
             }
 
-            
+
             chatbotResponse = bot.GetAnAnswer(userInput);
             soundPlayer.PlaySync();
 
