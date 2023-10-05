@@ -289,36 +289,12 @@
 			<Answer>Wichtig. Pflege dich gut.</Answer>
 		</Message>
 		<Message>
-			<Keyword>Liebe</Keyword>
-			<Answer>Wunderschön, bedeutsam.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Karriere</Keyword>
-			<Answer>Beruflicher Erfolg verfolgen.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Bildung</Keyword>
-			<Answer>Lebenslanges Lernen.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Freude</Keyword>
-			<Answer>Gelächter und Glück.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Ziele</Keyword>
-			<Answer>Klare Richtung setzen.</Answer>
-		</Message>
-		<Message>
 			<Keyword>Veränderung</Keyword>
 			<Answer>Teil des Lebens.</Answer>
 		</Message>
 		<Message>
 			<Keyword>Verantwortung</Keyword>
 			<Answer>Für Handlungen aufkommen.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Frieden</Keyword>
-			<Answer>Innere Ruhe finden.</Answer>
 		</Message>
 		<Message>
 			<Keyword>Lebensstil</Keyword>
@@ -337,56 +313,12 @@
 			<Answer>Denk ausserhalb der Box.</Answer>
 		</Message>
 		<Message>
-			<Keyword>Träume</Keyword>
-			<Answer>Verfolge deine Leidenschaften.</Answer>
-		</Message>
-		<Message>
 			<Keyword>Herausforderungen</Keyword>
 			<Answer>Chancen zum Wachsen.</Answer>
 		</Message>
 		<Message>
-			<Keyword>Glaube</Keyword>
-			<Answer>An dich selbst glauben.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Balance</Keyword>
-			<Answer>Harmonie in allem.</Answer>
-		</Message>
-		<Message>
 			<Keyword>Gesellschaft</Keyword>
 			<Answer>Gemeinschaft und Zusammenhalt.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Wandel</Keyword>
-			<Answer>Die einzige Konstante im Leben.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Geduld</Keyword>
-			<Answer>Warten können.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Erfüllung</Keyword>
-			<Answer>Innere Zufriedenheit finden.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Reisen</Keyword>
-			<Answer>Die Welt entdecken.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Genuss</Keyword>
-			<Answer>Leben in vollen Zügen.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Schicksal</Keyword>
-			<Answer>Das Unvermeidliche akzeptieren.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Abenteuer</Keyword>
-			<Answer>Das Unbekannte erkunden.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Loslassen</Keyword>
-			<Answer>Vergangenes hinter sich lassen.</Answer>
 		</Message>
 		<Message>
 			<Keyword>Glücklich sein</Keyword>
@@ -415,14 +347,6 @@
 		<Message>
 			<Keyword>Kommunikation</Keyword>
 			<Answer>Verbindung herstellen.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Natur</Keyword>
-			<Answer>Die Schönheit der Welt.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Erfolg</Keyword>
-			<Answer>Ziele erreichen.</Answer>
 		</Message>
 	<Message>
 		<Keyword>Erzähle mir ein Märchen</Keyword>
