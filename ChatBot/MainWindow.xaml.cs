@@ -12,6 +12,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.IO;
 using System.Xml.Serialization;
+using System.Threading;
 
 namespace ChatBot
 {
@@ -23,7 +24,8 @@ namespace ChatBot
         private bool isSending = false;
         BotEngine bot = new BotEngine();
         Storage storage = new Storage();
-        SoundPlayer soundPlayer = new SoundPlayer("../../../Resources/Receive.wav");
+        SoundPlayer receiveSound = new SoundPlayer("../../../Resources/Receive.wav");
+        SoundPlayer emptyConversationSound = new SoundPlayer("../../../Resources/Empty_ConversationEdit.wav");
         public MainWindow()
         {
             InitializeComponent();
@@ -34,6 +36,8 @@ namespace ChatBot
             Loaded += MainWindow_Loaded;
             InitializeConversation();
             AppSettings settings = LoadSettings();
+            receiveSound.Load();
+            emptyConversationSound.Load();
 
             // Checks settings and selects the right color with index
             if (settings.IsDarkMode)
@@ -219,7 +223,7 @@ namespace ChatBot
             {
                 lastConversationFinal.Assistant = chatbotResponse;
                 ConversationDisplay.Items.Refresh();
-                soundPlayer.Play();
+                receiveSound.Play();
 
                 ScrollSmoothlyToBottom();
 
@@ -246,12 +250,17 @@ namespace ChatBot
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Clear_Click(object sender, RoutedEventArgs e)
+        private async void Clear_Click(object sender, RoutedEventArgs e)
         {
+            new Thread(() =>
+            {
+                emptyConversationSound.PlaySync();
+            }).Start();
             storage.Clear();
-
+           
             ConversationDisplay.ItemsSource = null;
             InitializeConversation();
+            
         }
 
 
@@ -289,7 +298,7 @@ namespace ChatBot
 
                 storage.List.Add(new Storage.Conversation { User = "Hey ChatBot", Assistant = "Hallo Meister, wie kann ich Ihnen helfen?", Timestamp = currentTime, IsUserMessage = false });
                 ConversationDisplay.ItemsSource = storage.List;
-                soundPlayer.Play();
+                
             }
         }
 
