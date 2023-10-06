@@ -142,6 +142,7 @@
 
         <!-- Button send -->
         <Button
+            x:Name="SendButton"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
             Foreground="White"
@@ -202,6 +203,16 @@
             </Button.ToolTip>
 
         </Button>
+        
+        <!-- Message as reminder to stop spamming messages while loading -->
+        <TextBlock x:Name="SendingMessageIndicator" 
+                   FontFamily="Fonts/#Dosis"
+                   Visibility="Collapsed"
+                   Foreground="Red" 
+                   Text="Warten auf Antwort..." 
+                   Grid.Column="1"
+                   Grid.Row="2"/>
+
 
         <!-- Clear button -->
         <Button

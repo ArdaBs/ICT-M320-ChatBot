@@ -20,6 +20,7 @@ namespace ChatBot
     /// </summary>
     public partial class MainWindow : Window
     {
+        private bool isSending = false;
         BotEngine bot = new BotEngine();
         Storage storage = new Storage();
         SoundPlayer soundPlayer = new SoundPlayer("../../../Resources/Receive.wav");
@@ -169,13 +170,19 @@ namespace ChatBot
         /// <param name="e"></param>
         private async void Send_Click(object sender, RoutedEventArgs e)
         {
+            if (isSending)
+            {
+                SendingMessageIndicator.Visibility = Visibility.Visible;
+                return;
+            }
+
             string userInput = Input.Text.Trim();
 
             if (string.IsNullOrWhiteSpace(userInput))
             {
                 return;
             }
-
+            
             DateTime currentTime = DateTime.Now;
 
             storage.List.Add(new Storage.Conversation { User = userInput, Assistant = string.Empty, Timestamp = currentTime });
@@ -191,6 +198,7 @@ namespace ChatBot
             int numSteps = delayMilliseconds / 500;
             string chatbotResponse = string.Empty;
 
+            isSending = true;
             for (int i = 0; i < numSteps; i++)
             {
                 chatbotResponse += ".";
@@ -214,6 +222,9 @@ namespace ChatBot
                 soundPlayer.Play();
 
                 ScrollSmoothlyToBottom();
+
+                SendingMessageIndicator.Visibility = Visibility.Collapsed;
+                isSending = false;
             }
         }
 
