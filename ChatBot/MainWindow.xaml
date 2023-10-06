@@ -196,7 +196,9 @@
             <materialDesign:PackIcon Kind="Send" 
                              Foreground="White" 
                              VerticalAlignment="Center"
-                             HorizontalAlignment="Center" />
+                             HorizontalAlignment="Center"
+                                     Width="24"
+                                     Height="24"/>
 
             <Button.ToolTip>
                 <ToolTip Content="Senden" />
@@ -213,6 +215,28 @@
                    Grid.Column="1"
                    Grid.Row="2"/>
 
+        <Button
+    Name="InputClearButton"
+    Content="Löschen"
+    Margin="0,0,10,0"
+    Grid.Row="2" Grid.Column="1"
+    VerticalAlignment="Center"
+    HorizontalAlignment="Right"
+    ToolTip="Eingabe Löschen"
+    Click="InputClearButton_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <materialDesign:PackIcon
+                    Kind="ChatRemove"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Width="24"
+                    Height="24"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
 
         <!-- Clear button -->
         <Button
@@ -260,7 +284,9 @@
             </Button.Template>
 
             <Button.Content>
-                <materialDesign:PackIcon Kind="DeleteOutline"/>
+                <materialDesign:PackIcon Kind="DeleteOutline"
+                                         Height="24"
+                                         Width="24"/>
             </Button.Content>
 
             <Button.Style>

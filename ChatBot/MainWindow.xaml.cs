@@ -254,6 +254,8 @@ namespace ChatBot
             InitializeConversation();
         }
 
+
+
         /// <summary>
         /// Function to make a smoth movement
         /// </summary>
@@ -409,6 +411,7 @@ namespace ChatBot
             InputBorder.Background = new SolidColorBrush(Color.FromRgb(220, 220, 220));
             InputBorder.BorderBrush = Brushes.Transparent;
             Input.Foreground = Brushes.Black;
+            InputClearButton.Foreground = Brushes.Black;
         }
 
         /// <summary>
@@ -426,6 +429,7 @@ namespace ChatBot
             ChatBotTitle.Foreground = Brushes.White;
             ThemeColor.Foreground = Brushes.White;
             Input.Foreground = Brushes.White;
+            InputClearButton.Foreground = Brushes.White;
         }
 
         /// <summary>
@@ -454,5 +458,9 @@ namespace ChatBot
             Dark
         }
 
+        private void InputClearButton_Click(object sender, RoutedEventArgs e)
+        {
+            Input.Text = string.Empty;
+        }
     }
 }
