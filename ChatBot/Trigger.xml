@@ -285,22 +285,6 @@
 		<Answer>Ein gesunder Lebensstil beinhaltet eine ausgewogene Ernährung, regelmässige Bewegung, ausreichend Schlaf und Stressbewältigung.</Answer>
 	</Message>
 		<Message>
-			<Keyword>Gesundheit</Keyword>
-			<Answer>Wichtig. Pflege dich gut.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Veränderung</Keyword>
-			<Answer>Teil des Lebens.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Verantwortung</Keyword>
-			<Answer>Für Handlungen aufkommen.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Lebensstil</Keyword>
-			<Answer>Gesunde Gewohnheiten.</Answer>
-		</Message>
-		<Message>
 			<Keyword>Fähigkeiten</Keyword>
 			<Answer>Weiterentwicklung.</Answer>
 		</Message>
@@ -339,10 +323,6 @@
 		<Message>
 			<Keyword>Selbstentwicklung</Keyword>
 			<Answer>Ständiges Wachstum.</Answer>
-		</Message>
-		<Message>
-			<Keyword>Erholung</Keyword>
-			<Answer>Ruhe und Entspannung.</Answer>
 		</Message>
 		<Message>
 			<Keyword>Kommunikation</Keyword>
@@ -410,5 +390,211 @@ Ein einfaches Beispiel für eine Klasse in C# wäre eine Bankkonto-Klasse. Diese
 	RAMDAC: Er wandelt die digitalen Daten in analoge Signale um.
 	
 Die Grafikkarte berechnet visuelle Daten und gibt sie über eine Schnittstelle aus, an der ein Bildschirm angeschlossen ist. Auf dem Bildschirm wird dann die Benutzeroberfläche von Betriebssystem und Anwendungsprogrammen dargestellt. Grafikkarten bzw. deren Funktionen bestimmen maßgeblich die Systemleistung und Eigenschaften eines Computers. Während der Hauptprozessor allgemeine Berechnungen erledigt und zum Beispiel das Verhalten von Spielfiguren berechnet, übernimmt die Grafikkarte die Berechnung beispielsweise von physikalischen Phänomenen, Explosionen und einstürzenden Gebäuden.</Answer>
+</Message>
+<Message>
+    <Keyword>Was ist Virtual Reality?</Keyword>
+    <Answer>Virtual Reality (VR) ist eine Technologie, die es Benutzern ermöglicht, in eine computergenerierte, immersive Umgebung einzutauchen und darin zu interagieren.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie funktioniert Machine Learning?</Keyword>
+    <Answer>Machine Learning ist eine Methode des maschinellen Lernens, bei der Computer Algorithmen verwenden, um aus Daten zu lernen und Vorhersagen oder Entscheidungen zu treffen.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Grundlagen der Astrophysik?</Keyword>
+    <Answer>Die Astrophysik ist ein Teilgebiet der Physik, das sich mit den physikalischen Eigenschaften und Prozessen im Universum befasst, einschließlich der Erforschung von Sternen, Galaxien und kosmischen Phänomenen.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie funktioniert das menschliche Gehirn?</Keyword>
+    <Answer>Das menschliche Gehirn ist ein äusserst komplexes Organ, das aus Milliarden von Neuronen besteht und Signale verarbeitet, um Gedanken, Gefühle und Handlungen zu steuern.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind erneuerbare Energien?</Keyword>
+    <Answer>Erneuerbare Energien sind Energiequellen, die sich schnell erneuern, wie Sonnenenergie, Windenergie und Wasserkraft.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich ein Buch veröffentlichen?</Keyword>
+    <Answer>Sie können ein Buch veröffentlichen, indem Sie es schreiben, lektorieren lassen, ein Buchcover erstellen, es formatieren und es über Verlage oder Selbstveröffentlichungsplattformen veröffentlichen.</Answer>
+</Message>
+<Message>
+    <Keyword>Was ist Meditation?</Keyword>
+    <Answer>Meditation ist eine Praxis, bei der man sich auf den gegenwärtigen Moment konzentriert, um Ruhe, Klarheit und Entspannung zu fördern.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich meine Konzentration verbessern?</Keyword>
+    <Answer>Sie können Ihre Konzentration verbessern, indem Sie Ablenkungen minimieren, Pausen einplanen, regelmässig Sport treiben und ausreichend schlafen.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Vorteile von regelmässiger Bewegung?</Keyword>
+    <Answer>Regelmässige Bewegung bietet Vorteile wie bessere Gesundheit, Stressabbau, gesteigerte Energie und verbesserte Stimmung.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich meine Selbstdisziplin stärken?</Keyword>
+    <Answer>Die Selbstdisziplin kann durch das Setzen von klaren Grenzen, die Entwicklung von Gewohnheiten und die Vermeidung von Versuchungen gestärkt werden.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Grundlagen einer gesunden Ernährung?</Keyword>
+    <Answer>Eine gesunde Ernährung beinhaltet eine ausgewogene Aufnahme von Obst, Gemüse, Proteinen, Vollkornprodukten und ausreichend Wasser.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich effektiv mit Stress umgehen?</Keyword>
+    <Answer>Effektiver Stressabbau kann durch Entspannungstechniken wie Meditation, Yoga, Sport und das Erstellen von Stressbewältigungsstrategien erreicht werden.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die wichtigsten Prinzipien für finanzielle Planung?</Keyword>
+    <Answer>Die finanzielle Planung umfasst Prinzipien wie Budgetierung, Sparen, Schuldenabbau und Investitionen.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich meine kreativen Fähigkeiten entwickeln?</Keyword>
+    <Answer>Sie können Ihre kreativen Fähigkeiten entwickeln, indem Sie neue Dinge ausprobieren, Ihre Neugier fördern und Kreativitätstechniken anwenden.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Schlüssel zur emotionalen Intelligenz?</Keyword>
+    <Answer>Die Schlüssel zur emotionalen Intelligenz sind das Erkennen und Verstehen von Emotionen, Empathie, Selbstregulierung und soziale Fähigkeiten.</Answer>
+</Message>
+<Message>
+    <Keyword>Was ist Nanotechnologie?</Keyword>
+    <Answer>Nanotechnologie ist ein interdisziplinäres Gebiet, das sich mit der Manipulation von Materie auf atomarer oder molekularer Ebene befasst, oft im Bereich von Nanometern.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie funktioniert Blockchain-Technologie?</Keyword>
+    <Answer>Blockchain-Technologie ist ein dezentrales digitales Ledger-System, das Transaktionen in Blöcken speichert und eine sichere und transparente Aufzeichnung ermöglicht.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Auswirkungen des Klimawandels?</Keyword>
+    <Answer>Die Auswirkungen des Klimawandels umfassen steigende Temperaturen, extreme Wetterereignisse, Meeresspiegelanstieg und ökologische Veränderungen.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich effektiv Zeitmanagement betreiben?</Keyword>
+    <Answer>Effektives Zeitmanagement beinhaltet die Priorisierung von Aufgaben, die Verwendung von Zeitblöcken und die Reduzierung von Zeitverschwendung.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Grundlagen der Quantenphysik?</Keyword>
+    <Answer>Quantenphysik ist ein physikalisches Gebiet, das sich mit den Gesetzen und Phänomenen auf atomarer und subatomarer Ebene befasst, einschließlich Quantenverschränkung und Quantenüberlagerung.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich nachhaltiger leben?</Keyword>
+    <Answer>Nachhaltiges Leben beinhaltet die Reduzierung des ökologischen Fußabdrucks durch bewussten Konsum, Energieeffizienz und Abfallvermeidung.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Grundlagen der Robotik?</Keyword>
+    <Answer>Robotik ist ein Bereich der Ingenieurwissenschaften, der sich mit der Konstruktion und Programmierung von autonomen Maschinen befasst, die Aufgaben ausführen können.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich meine zwischenmenschlichen Beziehungen stärken?</Keyword>
+    <Answer>Sie können Ihre zwischenmenschlichen Beziehungen stärken, indem Sie aktiv zuhören, Empathie zeigen und konstruktiv kommunizieren.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Vorteile von Fernstudium?</Keyword>
+    <Answer>Fernstudium bietet Flexibilität, Selbstmotivation und Zugang zu Bildung von überall aus, ohne physisch anwesend zu sein.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich meine Online-Sicherheit verbessern?</Keyword>
+    <Answer>Sie können Ihre Online-Sicherheit verbessern, indem Sie starke Passwörter verwenden, Software aktualisieren und sich vor Phishing-Angriffen schützen.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Grundlagen der Elektromagnetismus?</Keyword>
+    <Answer>Der Elektromagnetismus ist ein Bereich der Physik, der sich mit elektrischen und magnetischen Feldern sowie elektromagnetischen Wellen befasst.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie funktioniert die Photosynthese?</Keyword>
+    <Answer>Die Photosynthese ist ein Prozess, bei dem Pflanzen Lichtenergie in chemische Energie umwandeln, indem sie Kohlendioxid aufnehmen und Sauerstoff abgeben.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Grundlagen der Informationssicherheit?</Keyword>
+    <Answer>Informationssicherheit beinhaltet den Schutz von Daten vor unbefugtem Zugriff, Diebstahl und Verlust durch Verschlüsselung und Sicherheitsprotokolle.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich meine Produktivität steigern?</Keyword>
+    <Answer>Sie können Ihre Produktivität steigern, indem Sie Aufgaben priorisieren, Zeitmanagement-Techniken anwenden und Pausen zur Erholung einplanen.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Grundlagen der Genetik?</Keyword>
+    <Answer>Genetik ist die Wissenschaft von den Genen und der Vererbung von Merkmalen von Generation zu Generation.</Answer>
+</Message>
+<Message>
+    <Keyword>Was ist künstliche Intelligenz (KI)?</Keyword>
+    <Answer>Künstliche Intelligenz (KI) bezieht sich auf die Entwicklung von Algorithmen und Maschinen, die Aufgaben ausführen können, die normalerweise menschliche Intelligenz erfordern, wie Lernen, Problemlösung und Sprachverarbeitung.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich meine Soft Skills verbessern?</Keyword>
+    <Answer>Sie können Ihre Soft Skills, wie Kommunikation, Teamarbeit und Empathie, durch Übung, Selbstreflexion und Schulungen verbessern.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind erneuerbare Ressourcen?</Keyword>
+    <Answer>Erneuerbare Ressourcen sind natürliche Ressourcen, die sich selbst regenerieren können, wie Sonnenlicht, Wind und Wasserkraft.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie funktioniert das Internet der Dinge (IoT)?</Keyword>
+    <Answer>Das Internet der Dinge (IoT) ist ein Netzwerk von miteinander verbundenen Geräten, Sensoren und Objekten, die Daten erfassen und miteinander kommunizieren, um automatisierte Aktionen auszulösen.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Grundlagen der Menschenrechte?</Keyword>
+    <Answer>Menschenrechte sind grundlegende Rechte und Freiheiten, die allen Menschen aufgrund ihrer bloßen Existenz zustehen, unabhängig von ihrer Herkunft, Religion oder Rasse.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich nachhaltige Mode unterstützen?</Keyword>
+    <Answer>Sie können nachhaltige Mode unterstützen, indem Sie umweltfreundliche Kleidung kaufen, Kleidung recyceln und die Herkunft Ihrer Kleidung recherchieren.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Vorteile von erneuerbarer Energie?</Keyword>
+    <Answer>Erneuerbare Energiequellen sind umweltfreundlich, nachhaltig und tragen zur Reduzierung der Treibhausgasemissionen bei.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich effektiv delegieren?</Keyword>
+    <Answer>Effektives Delegieren erfordert die klare Zuweisung von Aufgaben, die Auswahl geeigneter Teammitglieder und die Bereitstellung von Ressourcen und Unterstützung.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Grundlagen der Nanomedizin?</Keyword>
+    <Answer>Nanomedizin ist ein Bereich der Medizin, der sich auf die Anwendung von Nanotechnologie zur Diagnose und Behandlung von Krankheiten konzentriert.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich umweltfreundlicher reisen?</Keyword>
+    <Answer>Sie können umweltfreundlicher reisen, indem Sie öffentliche Verkehrsmittel nutzen, carpoolen, weniger fliegen und nachhaltige Unterkünfte wählen.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Grundlagen der Astronomie?</Keyword>
+    <Answer>Astronomie ist die Wissenschaft, die sich mit der Beobachtung und dem Verständnis von Himmelskörpern und dem Universum insgesamt befasst.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich meine berufliche Weiterentwicklung fördern?</Keyword>
+    <Answer>Sie können Ihre berufliche Weiterentwicklung fördern, indem Sie Weiterbildungen absolvieren, Netzwerke aufbauen und Ihre Fähigkeiten kontinuierlich verbessern.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Grundlagen der Quantencomputertechnologie?</Keyword>
+    <Answer>Quantencomputertechnologie verwendet Quantenbits (Qubits) und Quantenphänomene, um Berechnungen mit hoher Geschwindigkeit und Effizienz durchzuführen.</Answer>
+</Message>
+<Message>
+    <Keyword>Wie kann ich nachhaltige Landwirtschaft unterstützen?</Keyword>
+    <Answer>Sie können nachhaltige Landwirtschaft unterstützen, indem Sie lokale und biologische Produkte kaufen und Landwirte unterstützen, die umweltfreundliche Praktiken anwenden.</Answer>
+</Message>
+<Message>
+    <Keyword>Was sind die Grundlagen der Robotik in der Medizin?</Keyword>
+    <Answer>Die Robotik in der Medizin nutzt Roboter, um chirurgische Eingriffe durchzuführen und Präzision und Genauigkeit in der Medizin zu verbessern.</Answer>
+</Message>
+<Message>
+    <Keyword>Wer ist Micheal Jackson?</Keyword>
+    <Answer>Michael Jackson war ein berühmter amerikanischer Popmusiker und Tänzer, bekannt als "King of Pop". Er begann seine Karriere bei den Jackson 5 und wurde später als Solokünstler weltberühmt.
+	
+Sein Album "Thriller" ist das meistverkaufte Album aller Zeiten. Er war für seine einzigartigen Tanzbewegungen und seinen enormen Einfluss auf die Popkultur bekannt, hatte aber auch Kontroversen in seinem Leben. Jackson verstarb am 25. Juni 2009.</Answer>
+</Message>
+<Message>
+    <Keyword>Wer ist Messi?</Keyword>
+    <Answer>Lionel Andrés Messi Cuccittini ist ein argentinischer Fußballspieler. Messi wechselte im Alter von 13 Jahren von den Newell’s Old Boys in die Jugendakademie des FC Barcelona, ehe er 2004 im Alter von 17 Jahren für die Profis debütierte.</Answer>
+</Message>
+<Message>
+    <Keyword>Wer ist Lionel Messi?</Keyword>
+    <Answer>Lionel Andrés Messi Cuccittini ist ein argentinischer Fußballspieler. Messi wechselte im Alter von 13 Jahren von den Newell’s Old Boys in die Jugendakademie des FC Barcelona, ehe er 2004 im Alter von 17 Jahren für die Profis debütierte.</Answer>
+</Message>
+<Message>
+    <Keyword>Was ist FC Basel?</Keyword>
+    <Answer>Der FC Basel, oft einfach als "Basel" bezeichnet, ist ein bekannter Schweizer Fußballverein mit Sitz in Basel. Der Verein wurde 1893 gegründet und ist einer der erfolgreichsten Fußballvereine in der Schweiz. Der FC Basel ist für seine Dominanz im schweizerischen Fußball bekannt und hat zahlreiche nationale Meisterschaften und Pokaltitel gewonnen.
+
+Der Verein spielt in der Schweizer Super League, der höchsten Liga im Schweizer Fußball. Basel hat auch regelmäßig an europäischen Wettbewerben wie der UEFA Champions League und der UEFA Europa League teilgenommen.
+
+Die Heimspiele des FC Basel werden im Stadion St. Jakob-Park ausgetragen, einem der größten und modernsten Fußballstadien der Schweiz. Der Verein hat eine engagierte Fanbasis und eine lange Tradition im Schweizer Fußball.</Answer>
+</Message>
+<Message>
+    <Keyword>Was bist du?</Keyword>
+    <Answer>Ich bin ein Computerprogramm, das dazu entwickelt wurde, menschenähnliche Interaktionen mit Benutzern über Text zu führen. Mein Zweck besteht darin, Informationen bereitzustellen, Aufgaben auszuführen und Benutzern bei verschiedenen Anfragen zu helfen. Ich arbeite auf vordefinierten Regeln und Mustern, ohne eine künstliche Intelligenz oder ein eigenes Bewusstsein zu haben.</Answer>
 </Message>
 	</Messages>
