@@ -11,9 +11,7 @@
     <None Remove="Fonts\Dosis.ttf" />
     <None Remove="Resources\ChatBotLogo.ico" />
     <None Remove="Resources\ChatBotLogo.jpg" />
-    <None Remove="Resources\Empty_Conversation.wav" />
     <None Remove="Resources\Empty_ConversationEdit.wav" />
-    <None Remove="Resources\Fullscreen.png" />
     <None Remove="Resources\Receive.wav" />
   </ItemGroup>
 
@@ -26,7 +24,6 @@
     <Resource Include="Fonts\Dosis.ttf" />
     <Resource Include="Resources\ChatBotLogo.ico" />
     <Resource Include="Resources\ChatBotLogo.jpg" />
-    <Resource Include="Resources\Empty_Conversation.wav" />
     <Resource Include="Resources\Empty_ConversationEdit.wav" />
     <Resource Include="Resources\Receive.wav" />
   </ItemGroup>
