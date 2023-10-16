@@ -67,7 +67,7 @@ namespace ChatBot.Classes
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns></returns>
-        private int ComputeLevenshteinDistance(string a, string b)
+        public int ComputeLevenshteinDistance(string a, string b)
         {
             int[,] matrix = new int[a.Length + 1, b.Length + 1];
 
