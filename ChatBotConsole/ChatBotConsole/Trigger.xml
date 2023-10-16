@@ -1,0 +1,42 @@
+﻿<Messages>
+	<Message>
+		<Keyword>Hallo</Keyword>
+		<Answer>Hallo, wie geht es dir?</Answer>
+	</Message>
+	<Message>
+		<Keyword>Wie geht's?</Keyword>
+		<Answer>Mir geht es gut, danke! Und Ihnen?</Answer>
+	</Message>
+	<Message>
+		<Keyword>Was machst du?</Keyword>
+		<Answer>Ich bin hier, um Ihnen zu helfen!</Answer>
+	</Message>
+	<Message>
+		<Keyword>Erzähl mir einen Witz</Keyword>
+		<Answer>Warum gehen Geister nie zum Ball? Weil sie keinen Körper zum Tanzen haben!</Answer>
+	</Message>
+	<Message>
+		<Keyword>Wer bist du?</Keyword>
+		<Answer>Ich bin ein Chatbot, der Ihnen bei verschiedenen Aufgaben helfen kann.</Answer>
+	</Message>
+	<Message>
+		<Keyword>Danke</Keyword>
+		<Answer>Gern geschehen!</Answer>
+	</Message>
+	<Message>
+		<Keyword>Was ist die Zeit?</Keyword>
+		<Answer>Es tut mir leid, ich habe keinen Zugang zur aktuellen Uhrzeit.</Answer>
+	</Message>
+	<Message>
+		<Keyword>Erzähl mir eine Geschichte</Keyword>
+		<Answer>Es war einmal ein tapferer Ritter...</Answer>
+	</Message>
+	<Message>
+		<Keyword>Wie ist das Wetter?</Keyword>
+		<Answer>Es tut mir leid, ich habe keinen Zugang zu aktuellen Wetterinformationen.</Answer>
+	</Message>
+	<Message>
+		<Keyword>Auf Wiedersehen</Keyword>
+		<Answer>Auf Wiedersehen! Es war schön, mit Ihnen zu plaudern.</Answer>
+	</Message>
+</Messages>
