@@ -81,90 +81,9 @@ namespace ChatBot
             ScrollSmoothlyToBottom();
         }
 
-        /// <summary>
-        /// If button pressed window gets darker until its minimized
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void HideWindowButton_Click(object sender, RoutedEventArgs e)
-        {
-            Window window = Window.GetWindow(this);
-
-            if (window.WindowState == WindowState.Normal)
-            {
-                // Darken the window before minimizing
-                DoubleAnimation darkenAnimation = new DoubleAnimation();
-                darkenAnimation.From = 1.0;
-                darkenAnimation.To = 0.5;
-                darkenAnimation.Duration = TimeSpan.FromSeconds(0.5);
-
-                // Add a completed event handler to minimize the window when the animation finishes
-                darkenAnimation.Completed += (s, args) =>
-                {
-                    window.WindowState = WindowState.Minimized;
-
-                    DoubleAnimation resetAnimation = new DoubleAnimation();
-                    resetAnimation.From = 0.5;
-                    resetAnimation.To = 1.0;
-                    resetAnimation.Duration = TimeSpan.FromSeconds(0.5);
-
-                    window.BeginAnimation(Window.OpacityProperty, resetAnimation);
-                };
-
-                window.BeginAnimation(Window.OpacityProperty, darkenAnimation);
-            }
-            else if (window.WindowState == WindowState.Minimized)
-            {
-                DoubleAnimation restoreAnimation = new DoubleAnimation();
-                restoreAnimation.From = 0.5;
-                restoreAnimation.To = 1.0;
-                restoreAnimation.Duration = TimeSpan.FromSeconds(0.5);
-
-                // Add a completed event handler to set the window state to Normal when the animation finishes
-                restoreAnimation.Completed += (s, args) =>
-                {
-                    window.WindowState = WindowState.Normal;
-                };
-
-                // Apply the restore animation to the windows opacity property
-                window.BeginAnimation(Window.OpacityProperty, restoreAnimation);
-            }
-        }
-
-
         private void Current_Exit(object sender, ExitEventArgs e)
         {
             storage.Save();
-        }
-
-        /// <summary>
-        /// checks if its normal o maximized and changes the 
-        /// value to the oposite mode
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Fullscreen_Click(object sender, RoutedEventArgs e)
-        {
-            if (WindowState == WindowState.Normal)
-            {
-                WindowState = WindowState.Maximized;
-                Input.FontSize = 16;
-            }
-            else
-            {
-                WindowState = WindowState.Normal;
-                Input.FontSize = 12;
-            }
-        }
-
-        /// <summary>
-        /// CLoses this.Window
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Close_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
         }
 
         /// <summary>
