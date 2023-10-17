@@ -26,4 +26,10 @@
     <ProjectReference Include="..\ChatBot\ChatBot.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Storage">
+      <HintPath>..\ChatBot\Classes\Storage.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

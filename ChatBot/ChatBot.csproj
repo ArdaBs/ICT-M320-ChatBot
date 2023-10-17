@@ -21,6 +21,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Storage">
+      <HintPath>Classes\Storage.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Fonts\Dosis.ttf" />
     <Resource Include="Resources\ChatBotLogo.ico" />
     <Resource Include="Resources\ChatBotLogo.jpg" />
