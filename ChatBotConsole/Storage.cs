@@ -17,7 +17,7 @@
         [XmlElement("Conversation")]
         public List<Conversation> List { get; set; }
 
-        private string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\", "Conversations.xml");
+        private string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\", "Conversation.xml");
 
         public void Save()
         {
